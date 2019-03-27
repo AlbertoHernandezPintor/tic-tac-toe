@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titulo"
+        android:text="@string/elegir_figura"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/botonCirculo"
+            style="@style/casilla"
+            android:src="@drawable/circulo"
+            android:onClick="elegir"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/botonAspa"
+            style="@style/casilla"
+            android:src="@drawable/aspa"
+            android:onClick="elegir"/>
+    </LinearLayout>
+
+</LinearLayout>
